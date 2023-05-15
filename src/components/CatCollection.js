@@ -7,7 +7,7 @@ function CatCollection() {
 const [cats, setCats] = useState([])
 
 useEffect(() => {
-    fetch("http://localhost:3000/cats")
+    fetch("http://localhost:3001/cats")
     .then(response => response.json())
     .then(data => setCats(data))
   },[])

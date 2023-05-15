@@ -1,3 +1,4 @@
+import CatCollection from './CatCollection';
 import CatForm from './CatForm';
 import NavBar from './NavBar';
 
@@ -17,6 +18,7 @@ function Home() {
     <div>
       <CatForm addNewCat={addNewCat}/>
       <NavBar />
+      <CatCollection />
     </div>
   );
 }
