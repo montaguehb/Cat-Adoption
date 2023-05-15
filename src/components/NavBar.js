@@ -1,13 +1,8 @@
 import React from 'react'
 
-const NavBar = () => {
+function NavBar() {
   return (
-    <div className="nav">
-        <button>Home</button>
-        <button>Add Cat</button>
-        <button>Adopt Cat</button>
-        <button>Toggle Filter</button>
-    </div>
+    <div>NavBar</div>
   )
 }
 
