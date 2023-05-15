@@ -1,0 +1,404 @@
+{
+  "cats": [
+    {
+      "image": "https://cdn2.thecatapi.com/images/49i.gif",
+      "cost": "$250",
+      "name": "Bandit",
+      "description": "Bandit is a mischievous and playful cat who loves to run and play. He also enjoys cuddling up on laps and being petted.",
+      "id": "0",
+      "breed": "Orange Tabby"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/bh2.jpg",
+      "cost": "$225",
+      "name": "Bella",
+      "description": "Bella is a sweet and gentle cat who loves to be around people. She enjoys being petted and snuggled, and will always be there for you.",
+      "id": "1",
+      "breed": "Maine Coon"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/bts.jpg",
+      "cost": "$225",
+      "name": "Boots",
+      "description": "Boots is a confident and independent cat who loves to explore his surroundings. He is also a great hunter and will keep your home free of pests.",
+      "id": "2",
+      "breed": "Snowshoe Cat"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/ef1.jpg",
+      "cost": "$250",
+      "name": "Charlie",
+      "description": "Charlie is a playful and energetic cat who loves to run and play. He also enjoys cuddling up on laps and being petted.",
+      "id": "3",
+      "breed": "Maine Coon"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/eim.jpg",
+      "cost": "$225",
+      "name": "Cinnamon",
+      "description": "Cinnamon is a sweet and gentle cat who loves to be around people. She also enjoys playing with her toys and lounging in the sun.",
+      "id": "4",
+      "breed": "American Shorthair"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/be1.jpg",
+      "cost": "$175",
+      "name": "Cleo",
+      "description": "Cleo is a sassy and independent cat with a love for freedom. She enjoys exploring her surroundings and lounging in the sun.",
+      "id": "5",
+      "breed": "Chartreux"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/k5Vrnaz_Q.jpg",
+      "cost": "$250",
+      "name": "Clyde",
+      "description": "Clyde is a curious and playful cat who loves to explore his surroundings. He also enjoys cuddling up on laps and being petted.",
+      "id": "6",
+      "breed": "American Shorthair"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/22v.jpg",
+      "cost": "$200",
+      "name": "Daisy",
+      "description": "Daisy is a cute and cuddly cat who loves to be held and snuggled. She also enjoys playing with her toys and exploring her surroundings.",
+      "id": "7",
+      "breed": "Snowshoe Cat"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/z0cI0mqjr.jpg",
+      "cost": "$175",
+      "name": "Felix",
+      "description": "Felix is a friendly and outgoing cat who loves to be around people. He enjoys being petted and snuggled, and will always be there for you.",
+      "id": "8",
+      "breed": "Snowshoe Cat"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/eel.jpg",
+      "cost": "$100",
+      "name": "Fluffy",
+      "description": "Fluffy is a friendly and playful cat with a soft and cuddly coat. She loves to chase toys and snuggle up on laps.",
+      "id": "9",
+      "breed": "American Shorthair"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/MTcyNTM5Mg.jpg",
+      "cost": "$200",
+      "name": "Ginger",
+      "description": "Ginger is a playful and energetic cat who loves to chase toys and play games. She also enjoys cuddling up on laps and being petted.",
+      "id": "10",
+      "breed": "Persian"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/3p4.gif",
+      "cost": "$225",
+      "name": "Ginny",
+      "description": "Ginny is a feisty and energetic cat who loves to run and play. She also enjoys cuddling up on laps and being petted.",
+      "id": "11",
+      "breed": "Snowshoe Cat"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/aJAsEA8uU.jpg",
+      "cost": "$200",
+      "name": "Gordon",
+      "description": "Gordon is a curious and adventurous cat who loves to explore new places. He also enjoys playing with his toys and lounging in the sun.",
+      "id": "12",
+      "breed": "American Bobtail"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/ebh.jpg",
+      "cost": "$225",
+      "name": "Jasmine",
+      "description": "Jasmine is a graceful and elegant cat who loves to be around people. She also enjoys playing with her toys and exploring her surroundings.",
+      "id": "13",
+      "breed": "Chausie"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/385.jpg",
+      "cost": "$175",
+      "name": "Lily",
+      "description": "Lily is a cute and cuddly cat who loves to be held and snuggled. She also enjoys playing with her toys and exploring her surroundings.",
+      "id": "14",
+      "breed": "Chartreux"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/92p.jpg",
+      "cost": "$300",
+      "name": "Lucky",
+      "description": "Lucky is a charming and affectionate cat with a love for people. He enjoys being petted and snuggled, and will always be by your side.",
+      "id": "15",
+      "breed": "Siamese"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/chv.jpg",
+      "cost": "$200",
+      "name": "Luna",
+      "description": "Luna is a sweet and gentle cat who loves to be around people. She enjoys being petted and snuggled, and will always be there for you.",
+      "id": "16",
+      "breed": "Chausie"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/MTg4MjQ2Ng.jpg",
+      "cost": "$225",
+      "name": "Marmalade",
+      "description": "Marmalade is a sweet and gentle cat who loves to be around people. She also enjoys playing with her toys and lounging in the sun.",
+      "id": "17",
+      "breed": "Persian"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/8gg.gif",
+      "cost": "$250",
+      "name": "Max",
+      "description": "Max is a strong and loyal cat with a heart of gold. He enjoys playing with his toys and cuddling up with his family.",
+      "id": "18",
+      "breed": "Siamese"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/46b.jpg",
+      "cost": "$300",
+      "name": "Matty",
+      "description": "Max is a fun-loving and energetic cat who loves to play and run. He also enjoys snuggling up on laps and being petted.",
+      "id": "19",
+      "breed": "Maine Coon"
+    },
+    {
+      "image": "https://24.media.tumblr.com/tumblr_krvx7tfD0B1qa9hjso1_1280.jpg",
+      "cost": "$150",
+      "name": "Midnight",
+      "description": "Midnight is a sleek and mysterious cat with a love for adventure. She is also a great cuddler and will keep you warm on chilly nights.",
+      "id": "20",
+      "breed": "Persian"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/OfIuuOv07.jpg",
+      "cost": "$175",
+      "name": "Midori",
+      "description": "Midori is a gentle and kind cat who loves to be petted and snuggled. She also enjoys playing with her toys and exploring her surroundings.",
+      "id": "21",
+      "breed": "American Shorthair"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/7jg.jpg",
+      "cost": "$200",
+      "name": "Milo",
+      "description": "Milo is a cute and cuddly cat who loves to be held and snuggled. He also enjoys playing with his toys and exploring his surroundings.",
+      "id": "22",
+      "breed": "Chausie"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/tnxX4IOst.jpg",
+      "cost": "$200",
+      "name": "Mittens",
+      "description": "Mittens is a sweet and affectionate cat who loves to be petted and snuggled. She is also a great lap cat and will keep you company for hours.",
+      "id": "23",
+      "breed": "Orange Tabby"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/e7o.jpg",
+      "cost": "$175",
+      "name": "Mitty",
+      "description": "Mitty is a playful and curious cat who loves to explore her surroundings. She also enjoys cuddling up on laps and being petted.",
+      "id": "24",
+      "breed": "Persian"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/tv8tNeYaU.jpg",
+      "cost": "$225",
+      "name": "Moppy",
+      "description": "Moppy is a playful and curious cat who loves to explore her surroundings. She also enjoys cuddling up on laps and being petted.",
+      "id": "25",
+      "breed": "American Bobtail"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/cna.jpg",
+      "cost": "$225",
+      "name": "Morris",
+      "description": "Morris is a playful and curious cat who loves to explore his surroundings. He also enjoys snuggling up on laps and being petted.",
+      "id": "26",
+      "breed": "American Shorthair"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/dfn.jpg",
+      "cost": "$175",
+      "name": "Muffin",
+      "description": "Muffin is a sweet and gentle cat who loves to be around people. She enjoys lounging in the sun and watching the world go by.",
+      "id": "27",
+      "breed": "American Shorthair"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/ctHlkAH3L.jpg",
+      "cost": "$200",
+      "name": "Oliver",
+      "description": "Oliver is a friendly and outgoing cat who loves to be around people. He enjoys being petted and snuggled, and will always be there for you.",
+      "id": "28",
+      "breed": "Chausie"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/pb.jpg",
+      "cost": "$300",
+      "name": "Oreo",
+      "description": "Oreo is a playful and curious cat who loves to explore. He also enjoys playing with his toys and cuddling with his family.",
+      "id": "29",
+      "breed": "American Bobtail"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/21e.jpg",
+      "cost": "$250",
+      "name": "Orville",
+      "description": "Orville is a playful and energetic cat who loves to run and play. He also enjoys snuggling up with his family and being petted.",
+      "id": "30",
+      "breed": "Maine Coon"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/bsb.jpg",
+      "cost": "$250",
+      "name": "Oscar",
+      "description": "Oscar is a gentle and affectionate cat who loves to be around people. He enjoys being petted and snuggled, and will always be there for you.",
+      "id": "31",
+      "breed": "Persian"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/Bc0CMLOjz.jpg",
+      "cost": "$175",
+      "name": "Pixie",
+      "description": "Pixie is a cute and cuddly cat who loves to be held and snuggled. She also enjoys playing with her toys and exploring her surroundings.",
+      "id": "32",
+      "breed": "Orange Tabby"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/c9h.jpg",
+      "cost": "$175",
+      "name": "Princess",
+      "description": "Princess is a regal and elegant cat who loves to be pampered and treated like royalty. She also enjoys lounging in the sun and being petted.",
+      "id": "33",
+      "breed": "Snowshoe Cat"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/3pj.jpg",
+      "cost": "$175",
+      "name": "Pumpkin",
+      "description": "Pumpkin is a sweet and gentle cat who loves to be petted and snuggled. She also enjoys playing with her toys and lounging in the sun.",
+      "id": "34",
+      "breed": "British Longhair"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/2CL5AqIfV.png",
+      "cost": "$250",
+      "name": "Romeo",
+      "description": "Romeo is a charming and romantic cat who loves to be around people. He enjoys being petted and snuggled, and will always be there for you.",
+      "id": "35",
+      "breed": "Maine Coon"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/3r8.gif",
+      "cost": "$200",
+      "name": "Shadow",
+      "description": "Shadow is a shy and cautious cat who needs a patient and loving family. Once he gets to know you, he will become your loyal companion for life.",
+      "id": "36",
+      "breed": "Maine Coon"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/750.jpg",
+      "cost": "$250",
+      "name": "Sid",
+      "description": "Sid is a majestic and regal cat with a love for attention. He enjoys being groomed and will always look his best.",
+      "id": "37",
+      "breed": "Orange Tabby"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/ck7.jpg",
+      "cost": "$200",
+      "name": "Simba",
+      "description": "Simba is a regal and majestic cat who loves to be pampered and treated like royalty. He also enjoys lounging in the sun and being petted.",
+      "id": "38",
+      "breed": "Siamese"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/vd.jpg",
+      "cost": "$175",
+      "name": "Smokey",
+      "description": "Smokey is a gentle and affectionate cat who loves to be petted and snuggled. He is also a great lap cat and will keep you warm and cozy.",
+      "id": "39",
+      "breed": "British Longhair"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/btj.jpg",
+      "cost": "$300",
+      "name": "Smudge",
+      "description": "Smudge is a mysterious and enigmatic cat who loves to be the center of attention. He also enjoys playing with his toys and lounging in the sun.",
+      "id": "40",
+      "breed": "Orange Tabby"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/bko.jpg",
+      "cost": "$200",
+      "name": "Snowball",
+      "description": "Snowball is a playful and energetic cat with a love for adventure. She enjoys exploring new places and meeting new people.",
+      "id": "41",
+      "breed": "Orange Tabby"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/c2h.jpg",
+      "cost": "$150",
+      "name": "Socks",
+      "description": "Socks is a curious and energetic cat who loves to explore. He is always up for a game of fetch and loves to be around people.",
+      "id": "42",
+      "breed": "Persian"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/9bd.jpg",
+      "cost": "$300",
+      "name": "Sully",
+      "description": "Sully is a friendly and outgoing cat who loves to be around people. He enjoys being petted and snuggled, and will always be by your side.",
+      "id": "43",
+      "breed": "American Bobtail"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/2k3.png",
+      "cost": "$250",
+      "name": "Tiger",
+      "description": "Tiger is a big and strong cat with a heart of gold. He loves to play and wrestle with his toys, and will always protect his family.",
+      "id": "44",
+      "breed": "British Longhair"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/d7m.gif",
+      "cost": "$175",
+      "name": "Toby",
+      "description": "Toby is a friendly and outgoing cat who loves to be around people. He enjoys being petted and snuggled, and will always be there for you.",
+      "id": "45",
+      "breed": "British Longhair"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/8gm.jpg",
+      "cost": "$175",
+      "name": "Tuxedo",
+      "description": "Tuxedo is a dapper and sophisticated cat with a love for the finer things in life. He enjoys lounging in style and being pampered.",
+      "id": "46",
+      "breed": "Chausie"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/cruhNBsv1.jpg",
+      "cost": "$175",
+      "name": "Whiskers",
+      "description": "Whiskers is a playful and mischievous cat who loves to play hide and seek. He also enjoys lounging in the sun and watching birds from the window.",
+      "id": "47",
+      "breed": "Siamese"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/b9u.jpg",
+      "cost": "$200",
+      "name": "Willy",
+      "description": "Willy is a mischievous and clever cat with a love for adventure. He enjoys playing games and exploring new places.",
+      "id": "48",
+      "breed": "Chartreux"
+    },
+    {
+      "image": "https://cdn2.thecatapi.com/images/MTQ5MzcyNA.jpg",
+      "cost": "$225",
+      "name": "Zeus",
+      "description": "Zeus is a strong and powerful cat who loves to be the center of attention. He also enjoys playing with his toys and lounging in the sun.",
+      "id": "49",
+      "breed": "British Longhair"
+    }
+  ]
+}
