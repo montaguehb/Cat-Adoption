@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 function CatCard({name, age, breed, cost, description, image, id}) {
 
 function handleProfileClick(event) {
