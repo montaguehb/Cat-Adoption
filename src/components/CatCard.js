@@ -1,8 +1,18 @@
 import React from 'react'
 
-function CatCard() {    
+
+function CatCard({name, age, breed, cost, description, image, id}) {
+
+function handleProfileClick(event) {
+    console.log(event.target.value)
+}
+
   return (
-    <div>cat card</div>
+    <div>
+        <img src={image} alt= "name"/>
+        <h2>{name}, {age}</h2>
+        <button onClick={handleProfileClick}> See Profile </button>
+    </div>
   )
 }
 
