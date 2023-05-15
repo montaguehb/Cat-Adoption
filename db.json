@@ -1,0 +1,305 @@
+{
+    "cats": [
+      {
+        "image": "https://fakecatadoption.com/cat1.jpg",
+        "cost": "$100",
+        "name": "Fluffy",
+        "description": "Fluffy is a friendly and playful cat with a soft and cuddly coat. She loves to chase toys and snuggle up on laps."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat2.jpg",
+        "cost": "$150",
+        "name": "Socks",
+        "description": "Socks is a curious and energetic cat who loves to explore. He is always up for a game of fetch and loves to be around people."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat3.jpg",
+        "cost": "$200",
+        "name": "Mittens",
+        "description": "Mittens is a sweet and affectionate cat who loves to be petted and snuggled. She is also a great lap cat and will keep you company for hours."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat4.jpg",
+        "cost": "$175",
+        "name": "Whiskers",
+        "description": "Whiskers is a playful and mischievous cat who loves to play hide and seek. He also enjoys lounging in the sun and watching birds from the window."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat5.jpg",
+        "cost": "$250",
+        "name": "Tiger",
+        "description": "Tiger is a big and strong cat with a heart of gold. He loves to play and wrestle with his toys, and will always protect his family."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat6.jpg",
+        "cost": "$175",
+        "name": "Muffin",
+        "description": "Muffin is a sweet and gentle cat who loves to be around people. She enjoys lounging in the sun and watching the world go by."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat7.jpg",
+        "cost": "$300",
+        "name": "Oreo",
+        "description": "Oreo is a playful and curious cat who loves to explore. He also enjoys playing with his toys and cuddling with his family."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat8.jpg",
+        "cost": "$225",
+        "name": "Boots",
+        "description": "Boots is a confident and independent cat who loves to explore his surroundings. He is also a great hunter and will keep your home free of pests."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat9.jpg",
+        "cost": "$175",
+        "name": "Smokey",
+        "description": "Smokey is a gentle and affectionate cat who loves to be petted and snuggled. He is also a great lap cat and will keep you warm and cozy."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat10.jpg",
+        "cost": "$200",
+        "name": "Shadow",
+        "description": "Shadow is a shy and cautious cat who needs a patient and loving family. Once he gets to know you, he will become your loyal companion for life."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat11.jpg",
+        "cost": "$150",
+        "name": "Midnight",
+        "description": "Midnight is a sleek and mysterious cat with a love for adventure. She is also a great cuddler and will keep you warm on chilly nights."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat12.jpg",
+        "cost": "$175",
+        "name": "Pumpkin",
+        "description": "Pumpkin is a sweet and gentle cat who loves to be petted and snuggled. She also enjoys playing with her toys and lounging in the sun."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat13.jpg",
+        "cost": "$250",
+        "name": "Simba",
+        "description": "Simba is a majestic and regal cat with a love for attention. He enjoys being groomed and will always look his best."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat14.jpg",
+        "cost": "$200",
+        "name": "Ginger",
+        "description": "Ginger is a playful and energetic cat who loves to chase toys and play games. She also enjoys cuddling up on laps and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat15.jpg",
+        "cost": "$175",
+        "name": "Tuxedo",
+        "description": "Tuxedo is a dapper and sophisticated cat with a love for the finer things in life. He enjoys lounging in style and being pampered."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat16.jpg",
+        "cost": "$300",
+        "name": "Lucky",
+        "description": "Lucky is a charming and affectionate cat with a love for people. He enjoys being petted and snuggled, and will always be by your side."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat17.jpg",
+        "cost": "$225",
+        "name": "Cinnamon",
+        "description": "Cinnamon is a sweet and gentle cat who loves to be around people. She also enjoys playing with her toys and lounging in the sun."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat18.jpg",
+        "cost": "$200",
+        "name": "Snowball",
+        "description": "Snowball is a playful and energetic cat with a love for adventure. She enjoys exploring new places and meeting new people."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat19.jpg",
+        "cost": "$175",
+        "name": "Cleo",
+        "description": "Cleo is a sassy and independent cat with a love for freedom. She enjoys exploring her surroundings and lounging in the sun."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat20.jpg",
+        "cost": "$250",
+        "name": "Max",
+        "description": "Max is a strong and loyal cat with a heart of gold. He enjoys playing with his toys and cuddling up with his family."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat21.jpg",
+        "cost": "$175",
+        "name": "Mittens",
+        "description": "Mittens is a playful and curious cat who loves to explore her surroundings. She also enjoys cuddling up on laps and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat22.jpg",
+        "cost": "$200",
+        "name": "Whiskers",
+        "description": "Whiskers is a mischievous and clever cat with a love for adventure. He enjoys playing games and exploring new places."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat23.jpg",
+        "cost": "$225",
+        "name": "Marmalade",
+        "description": "Marmalade is a sweet and gentle cat who loves to be around people. She also enjoys playing with her toys and lounging in the sun."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat24.jpg",
+        "cost": "$250",
+        "name": "Oreo",
+        "description": "Oreo is a playful and energetic cat who loves to run and play. He also enjoys snuggling up with his family and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat25.jpg",
+        "cost": "$175",
+        "name": "Midori",
+        "description": "Midori is a gentle and kind cat who loves to be petted and snuggled. She also enjoys playing with her toys and exploring her surroundings."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat26.jpg",
+        "cost": "$300",
+        "name": "Socks",
+        "description": "Socks is a friendly and outgoing cat who loves to be around people. He enjoys being petted and snuggled, and will always be by your side."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat27.jpg",
+        "cost": "$200",
+        "name": "Gizmo",
+        "description": "Gizmo is a curious and adventurous cat who loves to explore new places. He also enjoys playing with his toys and lounging in the sun."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat28.jpg",
+        "cost": "$225",
+        "name": "Mittens",
+        "description": "Mittens is a playful and curious cat who loves to explore her surroundings. She also enjoys cuddling up on laps and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat29.jpg",
+        "cost": "$250",
+        "name": "Romeo",
+        "description": "Romeo is a charming and romantic cat who loves to be around people. He enjoys being petted and snuggled, and will always be there for you."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat30.jpg",
+        "cost": "$175",
+        "name": "Pixie",
+        "description": "Pixie is a cute and cuddly cat who loves to be held and snuggled. She also enjoys playing with her toys and exploring her surroundings."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat31.jpg",
+        "cost": "$200",
+        "name": "Simba",
+        "description": "Simba is a regal and majestic cat who loves to be pampered and treated like royalty. He also enjoys lounging in the sun and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat32.jpg",
+        "cost": "$225",
+        "name": "Jasmine",
+        "description": "Jasmine is a graceful and elegant cat who loves to be around people. She also enjoys playing with her toys and exploring her surroundings."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat33.jpg",
+        "cost": "$250",
+        "name": "Bandit",
+        "description": "Bandit is a mischievous and playful cat who loves to run and play. He also enjoys cuddling up on laps and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat34.jpg",
+        "cost": "$175",
+        "name": "Toby",
+        "description": "Toby is a friendly and outgoing cat who loves to be around people. He enjoys being petted and snuggled, and will always be there for you."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat35.jpg",
+        "cost": "$300",
+        "name": "Smokey",
+        "description": "Smokey is a mysterious and enigmatic cat who loves to be the center of attention. He also enjoys playing with his toys and lounging in the sun."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat36.jpg",
+        "cost": "$200",
+        "name": "Milo",
+        "description": "Milo is a cute and cuddly cat who loves to be held and snuggled. He also enjoys playing with his toys and exploring his surroundings."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat37.jpg",
+        "cost": "$225",
+        "name": "Bella",
+        "description": "Bella is a sweet and gentle cat who loves to be around people. She enjoys being petted and snuggled, and will always be there for you."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat38.jpg",
+        "cost": "$250",
+        "name": "Charlie",
+        "description": "Charlie is a playful and energetic cat who loves to run and play. He also enjoys cuddling up on laps and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat39.jpg",
+        "cost": "$175",
+        "name": "Lily",
+        "description": "Lily is a cute and cuddly cat who loves to be held and snuggled. She also enjoys playing with her toys and exploring her surroundings."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat40.jpg",
+        "cost": "$200",
+        "name": "Oliver",
+        "description": "Oliver is a friendly and outgoing cat who loves to be around people. He enjoys being petted and snuggled, and will always be there for you."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat41.jpg",
+        "cost": "$225",
+        "name": "Mittens",
+        "description": "Mittens is a playful and curious cat who loves to explore his surroundings. He also enjoys snuggling up on laps and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat42.jpg",
+        "cost": "$250",
+        "name": "Oscar",
+        "description": "Oscar is a gentle and affectionate cat who loves to be around people. He enjoys being petted and snuggled, and will always be there for you."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat43.jpg",
+        "cost": "$175",
+        "name": "Princess",
+        "description": "Princess is a regal and elegant cat who loves to be pampered and treated like royalty. She also enjoys lounging in the sun and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat44.jpg",
+        "cost": "$300",
+        "name": "Max",
+        "description": "Max is a fun-loving and energetic cat who loves to play and run. He also enjoys snuggling up on laps and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat45.jpg",
+        "cost": "$200",
+        "name": "Luna",
+        "description": "Luna is a sweet and gentle cat who loves to be around people. She enjoys being petted and snuggled, and will always be there for you."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat46.jpg",
+        "cost": "$225",
+        "name": "Zeus",
+        "description": "Zeus is a strong and powerful cat who loves to be the center of attention. He also enjoys playing with his toys and lounging in the sun."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat47.jpg",
+        "cost": "$250",
+        "name": "Cleo",
+        "description": "Cleo is a curious and playful cat who loves to explore her surroundings. She also enjoys cuddling up on laps and being petted."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat48.jpg",
+        "cost": "$175",
+        "name": "Felix",
+        "description": "Felix is a friendly and outgoing cat who loves to be around people. He enjoys being petted and snuggled, and will always be there for you."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat49.jpg",
+        "cost": "$200",
+        "name": "Daisy",
+        "description": "Daisy is a cute and cuddly cat who loves to be held and snuggled. She also enjoys playing with her toys and exploring her surroundings."
+      },
+      {
+        "image": "https://fakecatadoption.com/cat50.jpg",
+        "cost": "$225",
+        "name": "Ginger",
+        "description": "Ginger is a feisty and energetic cat who loves to run and play. She also enjoys cuddling up on laps and being petted."
+      }
+    ]
+}
+  
