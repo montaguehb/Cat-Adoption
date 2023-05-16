@@ -62,7 +62,7 @@ function Home() {
         <CatForm addNewCat={addNewCat}/>
       </Route>
       <Route exact path="/">
-        {!!cats?<CatProfile handleGoBack={handleGoBack} handleEditedCat={handleEditedCat} catToAdopt={cats[0]}/>:<div>loading</div>}
+        {!!cats?<CatProfile handleGoBack={handleGoBack} handleEditedCat={handleEditedCat} catToAdopt={cats[0] }/>:<div>loading</div>}
         {/* <CatCollection cats={cats} search={search} sort={sort} toggleProfile={toggleProfile}/> */}
       </Route>
     </Switch>
