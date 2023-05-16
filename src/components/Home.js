@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react';
 import CatCollection from './CatCollection';
 import CatForm from './CatForm';
 import NavBar from './NavBar';
+import { BrowserRouter, Switch, Route  } from 'react-router-dom';
+
 
 function Home() {
 
