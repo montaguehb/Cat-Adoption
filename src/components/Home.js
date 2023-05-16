@@ -11,6 +11,7 @@ function Home() {
   const handleClick = e => setSort(e.target.textContent)
   const handleSearch = searchText => setSearch(searchText) 
 
+
   const addNewCat = async catObj => {
     const resp = await fetch("http://localhost:3001/cats", {
       method: "POST",

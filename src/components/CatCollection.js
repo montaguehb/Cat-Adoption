@@ -2,8 +2,8 @@ import React from 'react'
 import CatCard from "./CatCard"
 import { Container, Row } from 'react-bootstrap'
 
-function CatCollection({cats, sort, filter}) {
-  const filteredArray = cats.filter(cat => cat)
+function CatCollection({cats, sort, search}) {
+  const filteredArray = cats.filter(cat => cat.name.includes(search))
   const sortedArray = filteredArray.sort()
   const catsArray = sortedArray.map(catObj => <CatCard key={catObj.id} {...catObj}/>)
 
