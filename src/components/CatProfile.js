@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id}, handleGoBack}) {
+function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id}, handleGoBack, handleEditedCat}) {
     //write handleAdoptClick function for buttons
     
     function handleAdoptClick(){
@@ -12,9 +12,8 @@ function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id
             },
             body: JSON.stringify({adopted: true})
         })
-        
-        
-        
+        .then(response => response.json())
+        .then(data => handleEditedCat(data))    
     }
     
   return (

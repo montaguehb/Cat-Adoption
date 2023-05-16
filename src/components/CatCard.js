@@ -1,11 +1,14 @@
 import React from 'react'
 import { Col, Button, Card } from 'react-bootstrap';
 
-function CatCard({name, age, image, id}) {
-  function handleProfileClick(event) {
-      console.log(event.target.value)
-  }
-  
+
+function CatCard({name, age, breed, cost, description, image, id, handleAdoptCat, toggleProfile}) {
+
+function handleProfileClick(event) {
+    handleAdoptCat(event.target.id)
+    toggleProfile()
+}
+
   return (
     <Col>
       <Card style={{ width: '18rem' }}>

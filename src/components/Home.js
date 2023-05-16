@@ -6,15 +6,29 @@ import CatProfile from './CatProfile';
 import Navigation from './Navigation';
 
 function Home() {
-  const [cats, setCats] = useState(null)
-  const [sort, setSort] = useState("Filter By")
-  const [catToAdopt, setCatToAdopt] = useState(null)
+  const [cats, setCats] = useState([])
+  const [catToAdopt, setCatToAdopt] = useState([])
+  const [goBack, setGoBack] = useState(false)
+  const [showProfile, setShowProfile] = useState(false)
   const [search, setSearch] = useState("")
 
+  function handleEditedCat(newCatObj){
+    setCats((currentVal)=>currentVal.map(cat => cat.id === newCatObj.id ? newCatObj : cat))
+    handleGoBack()
+  }
+
+  function toggleProfile() {
+    setShowProfile(currentVal => !currentVal)
+  }
+
+  function handleGoBack(){
+    setGoBack(currentVal => !currentVal)
+    toggleProfile()
+  }
+  
   const handleClick = e => setSort(e.target.textContent)
   const handleSearch = searchText => setSearch(searchText) 
 
-  const handleGoBack = () => setCatToAdopt(null)
   useEffect(() => {
     fetch("http://localhost:3001/cats")
     .then(response => response.json())
@@ -38,9 +52,9 @@ function Home() {
 
   return (
     <div>
-      <Navigation handleClick={handleClick} sort={sort} handleSearch={handleSearch}/>
-      {!catToAdopt?<CatCollection cats={cats} sort={sort} search={search}/>:<CatProfile catToAdopt={catToAdopt} handleAdoptCat={handleAdoptCat} handleGoBack={handleGoBack}/>}
-      <CatForm addNewCat={addNewCat}/>  
+      <CatForm addNewCat={addNewCat}/>
+      <NavBar />
+      {showProfile ? <CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack} handleEditedCat={handleEditedCat}/> : <CatCollection cats={cats} handleAdoptCat={handleAdoptCat} toggleProfile={toggleProfile}/>}
     </div>
   );
 }
