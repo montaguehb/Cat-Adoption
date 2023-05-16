@@ -1,26 +1,42 @@
 import React, {useState, useEffect} from 'react';
 import CatCollection from './CatCollection';
 import CatForm from './CatForm';
+import CatProfile from './CatProfile';
 import Navigation from './Navigation';
 import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 
-
 function Home() {
   const [cats, setCats] = useState([])
-  const [sort, setSort] = useState("Filter By")
+  const [catToAdopt, setCatToAdopt] = useState([])
+  const [goBack, setGoBack] = useState(false)
+  const [showProfile, setShowProfile] = useState(false)
   const [search, setSearch] = useState("")
+  const [sort, setSort] = useState("Sort By")
 
+  function handleEditedCat(newCatObj){
+    setCats((currentVal)=>currentVal.map(cat => cat.id === newCatObj.id ? newCatObj : cat))
+    handleGoBack()
+  }
+
+  function toggleProfile() {
+    setShowProfile(currentVal => !currentVal)
+  }
+
+  function handleGoBack(){
+    setGoBack(currentVal => !currentVal)
+    toggleProfile()
+  }
+  
   const handleClick = e => setSort(e.target.textContent)
   const handleSearch = searchText => setSearch(searchText) 
 
-
-
   useEffect(() => {
-    fetch("http://localhost:3000/cats")
+    fetch("http://localhost:3001/cats")
     .then(response => response.json())
     .then(data => setCats(data))
+    
   },[])
-
+  
   const addNewCat = async catObj => {
     const resp = await fetch("http://localhost:3001/cats", {
       method: "POST",
@@ -33,11 +49,9 @@ function Home() {
     setCats([...cats, data])
   }
 
-  useEffect(() => {
-    fetch("http://localhost:3001/cats")
-    .then(response => response.json())
-    .then(data => setCats(data))
-  },[])
+  function handleAdoptCat(id){
+    setCatToAdopt(cats.filter(cat => cat.id === id)[0])
+  }
 
   return (
 <>
@@ -52,6 +66,10 @@ function Home() {
       </Route>
     </Switch>
   </>
+    // <div>
+    //   <Navigation handleClick={handleClick} sort={sort} handleSearch={handleSearch} addNewCat={addNewCat}/>
+    //   {showProfile ? <CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack} handleEditedCat={handleEditedCat}/> : <CatCollection cats={cats} handleAdoptCat={handleAdoptCat}  search={search} sort={sort} toggleProfile={toggleProfile}/>}
+    // </div>
   );
 }
 

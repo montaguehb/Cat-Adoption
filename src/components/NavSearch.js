@@ -4,8 +4,12 @@ import { Button, Form } from 'react-bootstrap'
 const NavSearch = (props) => {
     const [searchText, setSearchText] = useState("")
     const handleChange = e => setSearchText(e.target.value)
+    const handleSubmit = e => {
+        e.preventDefault()
+        props.handleSearch(searchText)
+    }
   return (
-    <Form onSubmit={props.handleSearch} className='d-flex'>
+    <Form onSubmit={handleSubmit} className='d-flex'>
         <Form.Control
         type='search'
         placeholder='Search...'
@@ -14,7 +18,7 @@ const NavSearch = (props) => {
         value={searchText}
         onChange={handleChange}
         />
-        <Button variant='primary'>Search</Button>
+        <Button variant='primary' onClick={() => props.handleSearch(searchText)}>Search</Button>
     </Form>
   )
 }

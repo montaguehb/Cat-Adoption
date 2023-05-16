@@ -8,7 +8,7 @@
       "id": "0",
       "breed": "Orange Tabby",
       "age": "8",
-      "adopted": "false"
+      "adopted": true
     },
     {
       "image": "https://cdn2.thecatapi.com/images/bh2.jpg",
@@ -48,7 +48,7 @@
       "id": "4",
       "breed": "American Shorthair",
       "age": "9",
-      "adopted": "false"
+      "adopted": true
     },
     {
       "image": "https://cdn2.thecatapi.com/images/be1.jpg",
@@ -88,7 +88,7 @@
       "id": "8",
       "breed": "Snowshoe Cat",
       "age": "3",
-      "adopted": "false"
+      "adopted": true
     },
     {
       "image": "https://cdn2.thecatapi.com/images/eel.jpg",
@@ -108,7 +108,7 @@
       "id": "10",
       "breed": "Persian",
       "age": "8",
-      "adopted": "false"
+      "adopted": true
     },
     {
       "image": "https://cdn2.thecatapi.com/images/3p4.gif",
@@ -138,7 +138,7 @@
       "id": "13",
       "breed": "Chausie",
       "age": "7",
-      "adopted": "false"
+      "adopted": true
     },
     {
       "image": "https://cdn2.thecatapi.com/images/385.jpg",
@@ -148,7 +148,7 @@
       "id": "14",
       "breed": "Chartreux",
       "age": "4",
-      "adopted": "false"
+      "adopted": true
     },
     {
       "image": "https://cdn2.thecatapi.com/images/92p.jpg",
@@ -298,7 +298,7 @@
       "id": "29",
       "breed": "American Bobtail",
       "age": "7",
-      "adopted": "false"
+      "adopted": true
     },
     {
       "image": "https://cdn2.thecatapi.com/images/21e.jpg",
@@ -438,7 +438,7 @@
       "id": "43",
       "breed": "American Bobtail",
       "age": "4",
-      "adopted": "false"
+      "adopted": true
     },
     {
       "image": "https://cdn2.thecatapi.com/images/2k3.png",
@@ -468,7 +468,7 @@
       "id": "46",
       "breed": "Chausie",
       "age": "7",
-      "adopted": "false"
+      "adopted": true
     },
     {
       "image": "https://cdn2.thecatapi.com/images/cruhNBsv1.jpg",
@@ -498,7 +498,7 @@
       "id": "49",
       "breed": "British Longhair",
       "age": "4",
-      "adopted": "false"
+      "adopted": true
     }
   ]
 }
