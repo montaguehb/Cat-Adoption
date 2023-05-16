@@ -33,7 +33,10 @@ function Home() {
   useEffect(() => {
     fetch("http://localhost:3001/cats")
     .then(response => response.json())
-    .then(data => setCats(data))
+    .then(data => {
+      setCats(data)
+      setShowProfile(true)
+    })
     
   },[])
   
@@ -49,6 +52,7 @@ function Home() {
     setCats([...cats, data])
   }
 
+  
   return (
 <>
 
