@@ -10,7 +10,7 @@ function Home() {
   const [cats, setCats] = useState([])
 
   useEffect(() => {
-    fetch("http://localhost:3001/cats")
+    fetch("http://localhost:3000/cats")
     .then(response => response.json())
     .then(data => setCats(data))
   },[])
@@ -27,11 +27,17 @@ function Home() {
     setCats([...cats, data])
   }
   return (
-    <div>
-      <CatForm addNewCat={addNewCat}/>
-      <NavBar />
-      <CatCollection cats={cats}/>
-    </div>
+<>
+<NavBar />
+    <Switch>
+      <Route path="/cats/new">
+        <CatForm addNewCat={addNewCat}/>
+      </Route>
+      <Route exact path="/">
+        <CatCollection cats={cats}/>
+      </Route>
+    </Switch>
+  </>
   );
 }
 
