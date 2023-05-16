@@ -1,16 +1,18 @@
+import CatCollection from './CatCollection';
 import CatForm from './CatForm';
 import NavBar from './NavBar';
-import { useState, useEffect } from 'react';
-import CatCollection from './CatCollection';
+import React, { useState, useEffect } from 'react';
 import CatProfile from './CatProfile';
+import Navigation from './Navigation';
 
 function Home() {
-  const [cats, setCats] = useState([])
+  const [cats, setCats] = useState(null)
+  const [sort, setSort] = useState("Filter By")
   const [catToAdopt, setCatToAdopt] = useState(null)
-  
-  function handleAdoptCat(id){
-    setCatToAdopt(cats.filter(cat => cat.id === id)[0])
-  }
+  const [search, setSearch] = useState("")
+
+  const handleClick = e => setSort(e.target.textContent)
+  const handleSearch = searchText => setSearch(searchText) 
 
   const handleGoBack = () => setCatToAdopt(null)
   useEffect(() => {
@@ -28,14 +30,17 @@ function Home() {
       },
       body: JSON.stringify(catObj)
     })
-    
   }
-  
+
+  function handleAdoptCat(id){
+    setCatToAdopt(cats.filter(cat => cat.id === id)[0])
+  }
+
   return (
     <div>
-      <CatForm addNewCat={addNewCat}/>
-      <NavBar />
-      {!catToAdopt?<CatCollection cats={cats} handleAdoptCat={handleAdoptCat}/>:<CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack}/>}   
+      <Navigation handleClick={handleClick} sort={sort} handleSearch={handleSearch}/>
+      {!catToAdopt?<CatCollection cats={cats} sort={sort} search={search}/>:<CatProfile catToAdopt={catToAdopt} handleAdoptCat={handleAdoptCat} handleGoBack={handleGoBack}/>}
+      <CatForm addNewCat={addNewCat}/>  
     </div>
   );
 }
