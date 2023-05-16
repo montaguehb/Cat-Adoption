@@ -49,27 +49,19 @@ function Home() {
     setCats([...cats, data])
   }
 
-  function handleAdoptCat(id){
-    setCatToAdopt(cats.filter(cat => cat.id === id)[0])
-  }
-
   return (
 <>
 
-<Navigation handleClick={handleClick} sort={sort} handleSearch={handleSearch}/>
+  <Navigation handleClick={handleClick} sort={sort} handleSearch={handleSearch}/>
     <Switch>
       <Route path="/cats/new">
         <CatForm addNewCat={addNewCat}/>
       </Route>
       <Route exact path="/">
-        <CatCollection cats={cats}/>
+        <CatCollection cats={cats} search={search} sort={sort} toggleProfile={toggleProfile}/>
       </Route>
     </Switch>
   </>
-    // <div>
-    //   <Navigation handleClick={handleClick} sort={sort} handleSearch={handleSearch} addNewCat={addNewCat}/>
-    //   {showProfile ? <CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack} handleEditedCat={handleEditedCat}/> : <CatCollection cats={cats} handleAdoptCat={handleAdoptCat}  search={search} sort={sort} toggleProfile={toggleProfile}/>}
-    // </div>
   );
 }
 
