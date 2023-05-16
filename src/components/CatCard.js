@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-function CatCard({name, age, breed, cost, description, image, id, handleAdoptCat}) {
+function CatCard({name, age, breed, cost, description, image, id, handleAdoptCat, toggleProfile}) {
 
 function handleProfileClick(event) {
     handleAdoptCat(event.target.id)
-    
+    toggleProfile()
 }
 
   return (

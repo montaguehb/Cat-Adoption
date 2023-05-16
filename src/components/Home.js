@@ -7,7 +7,24 @@ import CatProfile from './CatProfile';
 function Home() {
   const [cats, setCats] = useState([])
   const [catToAdopt, setCatToAdopt] = useState([])
-  
+  const [goBack, setGoBack] = useState(false)
+  const [showProfile, setShowProfile] = useState(false)
+
+
+  function handleEditedCat(newCatObj){
+    setCats((currentVal)=>currentVal.map(cat => cat.id === newCatObj.id ? newCatObj : cat))
+    handleGoBack()
+  }
+
+  function toggleProfile() {
+    setShowProfile(currentVal => !currentVal)
+  }
+
+  function handleGoBack(){
+    setGoBack(currentVal => !currentVal)
+    toggleProfile()
+  }
+
   function handleAdoptCat(id){
     setCatToAdopt(cats.filter(cat => cat.id === id)[0])
   }
@@ -34,8 +51,7 @@ function Home() {
     <div>
       <CatForm addNewCat={addNewCat}/>
       <NavBar />
-      <CatCollection cats={cats} handleAdoptCat={handleAdoptCat}/>
-      <CatProfile catToAdopt={catToAdopt} />
+      {showProfile ? <CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack} handleEditedCat={handleEditedCat}/> : <CatCollection cats={cats} handleAdoptCat={handleAdoptCat} toggleProfile={toggleProfile}/>}
     </div>
   );
 }
