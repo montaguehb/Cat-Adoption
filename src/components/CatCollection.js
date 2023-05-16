@@ -2,11 +2,11 @@ import React from 'react'
 import CatCard from "./CatCard"
 import { Container, Row } from 'react-bootstrap'
 
-function CatCollection({cats}) {
+function CatCollection({cats, sort, filter}) {
+  const filteredArray = cats.filter(cat => cat)
+  const sortedArray = filteredArray.sort()
+  const catsArray = sortedArray.map(catObj => <CatCard key={catObj.id} {...catObj}/>)
 
-  const catsArray = cats.map(catObj => <CatCard key={catObj.id} {...catObj}/>)
-
-  console.log(catsArray)
   return (
     <Container>
       <Row md={4}>
