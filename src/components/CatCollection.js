@@ -3,7 +3,7 @@ import CatCard from "./CatCard"
 import { Container, Row } from 'react-bootstrap'
 
 function CatCollection({cats, sort, search}) {
-  const filteredArray = cats.filter(cat => cat.name.includes(search))
+  const filteredArray = cats.filter(cat => cat.name.toLowerCase().includes(search.toLowerCase()))
   const sortedArray = filteredArray.sort((cat1, cat2) => {
     switch(sort) {
       case "Name ↑":
