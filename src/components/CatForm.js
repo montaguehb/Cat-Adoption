@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react'
+import React, {useState} from 'react'
 import {Form, Button} from 'react-bootstrap'
 function CatForm(props) {
   const [form, setForm] = useState({

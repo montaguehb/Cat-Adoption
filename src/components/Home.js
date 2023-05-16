@@ -1,8 +1,9 @@
+import React, {useState, useEffect} from 'react';
 import CatCollection from './CatCollection';
 import CatForm from './CatForm';
-import React, { useState, useEffect } from 'react';
 import CatProfile from './CatProfile';
 import Navigation from './Navigation';
+import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 
 function Home() {
   const [cats, setCats] = useState([])
@@ -44,17 +45,23 @@ function Home() {
       },
       body: JSON.stringify(catObj)
     })
-  }
-
-  function handleAdoptCat(id){
-    setCatToAdopt(cats.filter(cat => cat.id === id)[0])
+    const data = await resp.json()
+    setCats([...cats, data])
   }
 
   return (
-    <div>
-      <Navigation handleClick={handleClick} sort={sort} handleSearch={handleSearch} addNewCat={addNewCat}/>
-      {showProfile ? <CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack} handleEditedCat={handleEditedCat}/> : <CatCollection cats={cats} handleAdoptCat={handleAdoptCat}  search={search} sort={sort} toggleProfile={toggleProfile}/>}
-    </div>
+<>
+
+  <Navigation handleClick={handleClick} sort={sort} handleSearch={handleSearch}/>
+    <Switch>
+      <Route path="/cats/new">
+        <CatForm addNewCat={addNewCat}/>
+      </Route>
+      <Route exact path="/">
+        <CatCollection cats={cats} search={search} sort={sort} toggleProfile={toggleProfile}/>
+      </Route>
+    </Switch>
+  </>
   );
 }
 

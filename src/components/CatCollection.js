@@ -30,4 +30,5 @@ function CatCollection({cats, sort, search}) {
 }
 
 
+
 export default CatCollection;
