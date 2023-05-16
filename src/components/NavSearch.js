@@ -5,7 +5,7 @@ const NavSearch = (props) => {
     const [searchText, setSearchText] = useState("")
     const handleChange = e => setSearchText(e.target.value)
   return (
-    <Form onSubmit={props.handleSearch}>
+    <Form onSubmit={props.handleSearch} className='d-flex'>
         <Form.Control
         type='search'
         placeholder='Search...'
@@ -14,7 +14,7 @@ const NavSearch = (props) => {
         value={searchText}
         onChange={handleChange}
         />
-        <Button variant='Primary'></Button>
+        <Button variant='primary'>Search</Button>
     </Form>
   )
 }
