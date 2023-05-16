@@ -1,18 +1,10 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import CatCard from "./CatCard"
+import CatProfile from './CatProfile'
 
+function CatCollection({cats, handleAdoptCat}) {
+  const catsArray = cats.map(catObj => <CatCard key={catObj.id} {...catObj} handleAdoptCat={handleAdoptCat}/>)
 
-function CatCollection() {
-
-const [cats, setCats] = useState([])
-
-useEffect(() => {
-    fetch("http://localhost:3000/cats")
-    .then(response => response.json())
-    .then(data => setCats(data))
-  },[])
-
-  const catsArray = cats.map(catObj => <CatCard key={catObj.id} {...catObj}/>)
   return (
     <div>{catsArray}</div>
   )
