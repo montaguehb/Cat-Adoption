@@ -6,12 +6,13 @@ import CatProfile from './CatProfile';
 
 function Home() {
   const [cats, setCats] = useState([])
-  const [catToAdopt, setCatToAdopt] = useState([])
+  const [catToAdopt, setCatToAdopt] = useState(null)
   
   function handleAdoptCat(id){
     setCatToAdopt(cats.filter(cat => cat.id === id)[0])
   }
 
+  const handleGoBack = () => setCatToAdopt(null)
   useEffect(() => {
     fetch("http://localhost:3001/cats")
     .then(response => response.json())
@@ -34,8 +35,7 @@ function Home() {
     <div>
       <CatForm addNewCat={addNewCat}/>
       <NavBar />
-      <CatCollection cats={cats} handleAdoptCat={handleAdoptCat}/>
-      <CatProfile catToAdopt={catToAdopt} />
+      {!catToAdopt?<CatCollection cats={cats} handleAdoptCat={handleAdoptCat}/>:<CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack}/>}   
     </div>
   );
 }

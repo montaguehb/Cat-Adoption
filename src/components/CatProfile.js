@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
-function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id}}) {
+function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id}, handleGoBack}) {
     //write handleAdoptClick function for buttons
     
     function handleAdoptClick(){
@@ -26,7 +26,7 @@ function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id
         <p>Donation: {cost}</p>
         <p>Description: {description}</p>
         <button className="adopt" onClick={handleAdoptClick}>Adopt Cat</button>
-        <button href="#" className="back" to="/cats">Go Back</button>
+        <button href="#" className="back" to="/cats" onClick={handleGoBack}>Go Back</button>
         {/* ^button will be Link later */}
     </div>
   )
