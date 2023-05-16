@@ -5,7 +5,7 @@ import { Container, Row } from 'react-bootstrap'
 function CatCollection({cats, sort, filter}) {
   const filteredArray = cats.filter(cat => cat)
   const sortedArray = filteredArray.sort()
-  const catsArray = sortedArray.map(catObj => <CatCard key={catObj.id} {...catObj}/>)
+  const catsArray = cats.map(catObj => <CatCard key={catObj.id} {...catObj}/>)
   
   return (
     <Container>

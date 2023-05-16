@@ -6,7 +6,7 @@ import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 
 
 function Home() {
-  const [cats, setCats] = useState(null)
+  const [cats, setCats] = useState([])
   const [sort, setSort] = useState("Filter By")
   const [search, setSearch] = useState("")
 
