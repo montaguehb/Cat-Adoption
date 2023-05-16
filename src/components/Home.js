@@ -6,6 +6,7 @@ import CatProfile from './CatProfile';
 
 function Home() {
   const [cats, setCats] = useState([])
+<<<<<<< HEAD
   const [catToAdopt, setCatToAdopt] = useState([])
   const [goBack, setGoBack] = useState(false)
   const [showProfile, setShowProfile] = useState(false)
@@ -25,10 +26,15 @@ function Home() {
     toggleProfile()
   }
 
+=======
+  const [catToAdopt, setCatToAdopt] = useState(null)
+  
+>>>>>>> 2e1403bdf78a1d7394d2d8e1dac7376b67823503
   function handleAdoptCat(id){
     setCatToAdopt(cats.filter(cat => cat.id === id)[0])
   }
 
+  const handleGoBack = () => setCatToAdopt(null)
   useEffect(() => {
     fetch("http://localhost:3001/cats")
     .then(response => response.json())
@@ -51,7 +57,11 @@ function Home() {
     <div>
       <CatForm addNewCat={addNewCat}/>
       <NavBar />
+<<<<<<< HEAD
       {showProfile ? <CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack} handleEditedCat={handleEditedCat}/> : <CatCollection cats={cats} handleAdoptCat={handleAdoptCat} toggleProfile={toggleProfile}/>}
+=======
+      {!catToAdopt?<CatCollection cats={cats} handleAdoptCat={handleAdoptCat}/>:<CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack}/>}   
+>>>>>>> 2e1403bdf78a1d7394d2d8e1dac7376b67823503
     </div>
   );
 }

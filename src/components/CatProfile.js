@@ -1,7 +1,11 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
 
+<<<<<<< HEAD
 function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id}, handleGoBack, handleEditedCat}) {
+=======
+function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id}, handleGoBack}) {
+>>>>>>> 2e1403bdf78a1d7394d2d8e1dac7376b67823503
     //write handleAdoptClick function for buttons
     
     function handleAdoptClick(){
