@@ -1,18 +1,21 @@
 import React from 'react'
+import { Col, Button, Card } from 'react-bootstrap';
 
-
-function CatCard({name, age, breed, cost, description, image, id}) {
-
-function handleProfileClick(event) {
-    console.log(event.target.value)
-}
-
+function CatCard({name, age, image, id}) {
+  function handleProfileClick(event) {
+      console.log(event.target.value)
+  }
+  
   return (
-    <div>
-        <img src={image} alt= "name"/>
-        <h2>{name}, {age}</h2>
-        <button onClick={handleProfileClick}> See Profile </button>
-    </div>
+    <Col>
+      <Card style={{ width: '18rem' }}>
+        <Card.Img src={image} alt= "name" height={200} width={150}/>
+        <Card.Body>
+          <Card.Title>{name}, {age}</Card.Title>
+          <Button variant="info" onClick={handleProfileClick}> See Profile </Button>{' '}
+        </Card.Body>
+      </Card>
+    </Col> 
   )
 }
 
