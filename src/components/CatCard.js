@@ -1,6 +1,5 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button'
-import Card from 'react-bootstrap/Card';
+import { Col, Button, Card } from 'react-bootstrap';
 
 function CatCard({name, age, image, id}) {
   function handleProfileClick(event) {
@@ -8,13 +7,15 @@ function CatCard({name, age, image, id}) {
   }
   
   return (
-    <Card style={{ width: '18rem' }}>
-      <Card.Img src={image} alt= "name"/>
-      <Card.Body>
-        <Card.Title>{name}, {age}</Card.Title>
-        <Button variant="info" onClick={handleProfileClick}> See Profile </Button>{' '}
-      </Card.Body>
-    </Card>
+    <Col>
+      <Card style={{ width: '18rem' }}>
+        <Card.Img src={image} alt= "name" height={200} width={150}/>
+        <Card.Body>
+          <Card.Title>{name}, {age}</Card.Title>
+          <Button variant="info" onClick={handleProfileClick}> See Profile </Button>{' '}
+        </Card.Body>
+      </Card>
+    </Col> 
   )
 }
 

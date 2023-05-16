@@ -1,6 +1,6 @@
 import CatCollection from './CatCollection';
 import CatForm from './CatForm';
-import NavBar from './NavBar';
+import Nav from './Nav';
 import React, {useState, useEffect} from 'react';
 
 function Home() {
@@ -24,11 +24,11 @@ function Home() {
 
   return (
     <div>
+      <Nav />
       {!cats?
       <div>...loading</div>:
       <CatCollection cats={cats}/>}
-      <CatForm addNewCat={addNewCat}/>
-      <NavBar />
+      <CatForm addNewCat={addNewCat}/>  
     </div>
   );
 }
