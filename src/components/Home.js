@@ -1,6 +1,5 @@
 import CatCollection from './CatCollection';
 import CatForm from './CatForm';
-import NavBar from './NavBar';
 import React, { useState, useEffect } from 'react';
 import CatProfile from './CatProfile';
 import Navigation from './Navigation';
@@ -11,6 +10,7 @@ function Home() {
   const [goBack, setGoBack] = useState(false)
   const [showProfile, setShowProfile] = useState(false)
   const [search, setSearch] = useState("")
+  const [sort, setSort] = useState("Sort By")
 
   function handleEditedCat(newCatObj){
     setCats((currentVal)=>currentVal.map(cat => cat.id === newCatObj.id ? newCatObj : cat))
@@ -52,9 +52,8 @@ function Home() {
 
   return (
     <div>
-      <CatForm addNewCat={addNewCat}/>
-      <NavBar />
-      {showProfile ? <CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack} handleEditedCat={handleEditedCat}/> : <CatCollection cats={cats} handleAdoptCat={handleAdoptCat} toggleProfile={toggleProfile}/>}
+      <Navigation handleClick={handleClick} sort={sort} handleSearch={handleSearch} addNewCat={addNewCat}/>
+      {showProfile ? <CatProfile catToAdopt={catToAdopt} handleGoBack={handleGoBack} handleEditedCat={handleEditedCat}/> : <CatCollection cats={cats} handleAdoptCat={handleAdoptCat}  search={search} sort={sort} toggleProfile={toggleProfile}/>}
     </div>
   );
 }
