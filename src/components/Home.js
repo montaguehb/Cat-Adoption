@@ -33,7 +33,10 @@ function Home() {
   useEffect(() => {
     fetch("http://localhost:3001/cats")
     .then(response => response.json())
-    .then(data => setCats(data))
+    .then(data => {
+      setCats(data)
+      setCatToAdopt(cats[0])
+    })
     
   },[])
   
@@ -49,6 +52,7 @@ function Home() {
     setCats([...cats, data])
   }
 
+  
   return (
 <>
 
@@ -58,7 +62,8 @@ function Home() {
         <CatForm addNewCat={addNewCat}/>
       </Route>
       <Route exact path="/">
-        <CatCollection cats={cats} search={search} sort={sort} toggleProfile={toggleProfile}/>
+        {!!cats?<CatProfile handleGoBack={handleGoBack} handleEditedCat={handleEditedCat} catToAdopt={cats[0]}/>:<div>loading</div>}
+        {/* <CatCollection cats={cats} search={search} sort={sort} toggleProfile={toggleProfile}/> */}
       </Route>
     </Switch>
   </>
