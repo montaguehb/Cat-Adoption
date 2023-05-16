@@ -7,7 +7,16 @@ import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 
 function Home() {
   const [cats, setCats] = useState([])
-  const [catToAdopt, setCatToAdopt] = useState([])
+  const [catToAdopt, setCatToAdopt] = useState({
+    image: "https://cdn2.thecatapi.com/images/49i.gif",
+    cost: "$250",
+    name: "Bandit",
+    description: "Bandit is a mischievous and playful cat who loves to run and play. He also enjoys cuddling up on laps and being petted.",
+    id: "0",
+    breed: "Orange Tabby",
+    age: "8",
+    adopted: true
+  })
   const [goBack, setGoBack] = useState(false)
   const [showProfile, setShowProfile] = useState(false)
   const [search, setSearch] = useState("")
@@ -35,7 +44,7 @@ function Home() {
     .then(response => response.json())
     .then(data => {
       setCats(data)
-      setCatToAdopt(cats[0])
+      setShowProfile(true)
     })
     
   },[])
@@ -62,7 +71,7 @@ function Home() {
         <CatForm addNewCat={addNewCat}/>
       </Route>
       <Route exact path="/">
-        {!!cats?<CatProfile handleGoBack={handleGoBack} handleEditedCat={handleEditedCat} catToAdopt={cats[0] }/>:<div>loading</div>}
+        {showProfile?<CatProfile handleGoBack={handleGoBack} handleEditedCat={handleEditedCat} catToAdopt={catToAdopt}/>:<div>loading</div>}
         {/* <CatCollection cats={cats} search={search} sort={sort} toggleProfile={toggleProfile}/> */}
       </Route>
     </Switch>
