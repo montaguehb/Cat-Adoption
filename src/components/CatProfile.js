@@ -45,7 +45,7 @@ function CatProfile() {
                     <Card.Text>Breed: {cost}</Card.Text>
                     <Card.Text>Description: {description}</Card.Text>
                     <Card.Text>Suggested Donation: {cost}</Card.Text>
-                    <Button variant='primary' onClick={()=>console.log("changeMe")}>Adopt Cat</Button>
+                    <Button variant='primary' onClick={()=>history.go(-1)}>Adopt Cat</Button>
                     <Button variant='secondary' onClick={()=>history.go(-1)}>Go Back</Button>
                 </Card.Body>
                 </Card>
