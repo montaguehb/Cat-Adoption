@@ -3,7 +3,7 @@ import {Link, BrowserRouter, Switch, Route, useParams, useHistory} from 'react-r
 import {Card, Button, Row, Col, Container} from 'react-bootstrap'
 
 
-function CatProfile() {
+function CatProfile({handleEditedCat}) {
 
     const history = useHistory()
     //write handleAdoptClick function for buttons
@@ -18,17 +18,18 @@ function CatProfile() {
     
     }, [id])
     
-    // function handleAdoptClick(){
-    //     fetch(`http://localhost:3001/cats/${id}`, {
-    //         method: "PATCH",
-    //         headers: {
-    //             "Content-Type": "application/json"
-    //         },
-    //         body: JSON.stringify({adopted: true})
-    //     })
-    //     .then(response => response.json())
-    //     .then(data => handleEditedCat(data))    
-    // }
+    function handleAdoptClick(){
+        fetch(`http://localhost:3001/cats/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({adopted: true})
+        })
+        .then(response => response.json())
+        .then(data => handleEditedCat(data))
+        history.go(-1)    
+    }
     if(catProfile === null) return <h1>loading...</h1>
 
     const {name, age, cost, description, image} = catProfile
@@ -45,7 +46,7 @@ function CatProfile() {
                     <Card.Text>Breed: {cost}</Card.Text>
                     <Card.Text>Description: {description}</Card.Text>
                     <Card.Text>Suggested Donation: {cost}</Card.Text>
-                    <Button variant='primary' onClick={()=>history.go(-1)}>Adopt Cat</Button>
+                    <Button variant='primary' onClick={handleAdoptClick}>Adopt Cat</Button>
                     <Button variant='secondary' onClick={()=>history.go(-1)}>Go Back</Button>
                 </Card.Body>
                 </Card>
