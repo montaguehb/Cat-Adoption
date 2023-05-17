@@ -1,12 +1,12 @@
 import React from 'react'
 import { Col, Button, Card } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 
-function CatCard({name, age, breed, cost, description, image, id, handleAdoptCat, toggleProfile}) {
+function CatCard({name, age, breed, cost, description, image, id, toggleProfile}) {
 
 function handleProfileClick(event) {
-    handleAdoptCat(event.target.id)
-    toggleProfile()
+  toggleProfile()
 }
 
   return (
@@ -15,7 +15,10 @@ function handleProfileClick(event) {
         <Card.Img src={image} alt= "name" height={200} width={150}/>
         <Card.Body>
           <Card.Title>{name}, {age}</Card.Title>
-          <Button variant="info" onClick={handleProfileClick}> See Profile </Button>{' '}
+          {/* check this code to confirm it works or delete */}
+          <Link path='/cats/new'>
+            <Button variant="info" onClick={handleProfileClick}> See Profile </Button>{' '}
+          </Link>
         </Card.Body>
       </Card>
     </Col> 

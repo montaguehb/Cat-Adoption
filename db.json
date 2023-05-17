@@ -499,6 +499,15 @@
       "breed": "British Longhair",
       "age": "4",
       "adopted": true
+    },
+    {
+      "name": "",
+      "age": "",
+      "breed": "",
+      "cost": "",
+      "description": "",
+      "image": "",
+      "id": "3DN__b_"
     }
   ]
 }
