@@ -65,6 +65,9 @@ function Home() {
       <Route path="/cats/new">
         <CatForm addNewCat={addNewCat}/>
       </Route>
+      <Route path="/cats/:id">
+        <CatProfile/>
+      </Route>
       <Route exact path="/">
         <CatCollection cats={cats} search={search} sort={sort} toggleProfile={toggleProfile}/>
       </Route>

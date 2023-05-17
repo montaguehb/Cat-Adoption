@@ -1,21 +1,38 @@
-import React from 'react'
-import {Link, BrowserRouter, Switch, Route} from 'react-router-dom'
+import React, { useEffect, useState } from 'react'
+import {Link, BrowserRouter, Switch, Route, useParams, useHistory} from 'react-router-dom'
 import {Card, Button, Row, Col, Container} from 'react-bootstrap'
-function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id}, handleGoBack, handleEditedCat}) {
+
+
+function CatProfile() {
+
+    const history = useHistory()
     //write handleAdoptClick function for buttons
     
-    function handleAdoptClick(){
-        fetch(`http://localhost:3001/cats/${id}`, {
-            method: "PATCH",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({adopted: true})
-        })
+    const [catProfile, setCatProfile] = useState(null)
+
+    const {id} = useParams() 
+    useEffect(() => {
+      fetch(`http://localhost:3001/cats/${id}`)
         .then(response => response.json())
-        .then(data => handleEditedCat(data))    
-    }
+        .then(data => setCatProfile(data))
     
+    }, [id])
+    
+    // function handleAdoptClick(){
+    //     fetch(`http://localhost:3001/cats/${id}`, {
+    //         method: "PATCH",
+    //         headers: {
+    //             "Content-Type": "application/json"
+    //         },
+    //         body: JSON.stringify({adopted: true})
+    //     })
+    //     .then(response => response.json())
+    //     .then(data => handleEditedCat(data))    
+    // }
+    if(catProfile === null) return <h1>loading...</h1>
+
+    const {name, age, cost, description, image} = catProfile
+
   return (
     <Container>
         <Row className='justify-content-md-center'>
@@ -28,11 +45,8 @@ function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id
                     <Card.Text>Breed: {cost}</Card.Text>
                     <Card.Text>Description: {description}</Card.Text>
                     <Card.Text>Suggested Donation: {cost}</Card.Text>
-                    <Button variant='primary' onClick={handleAdoptClick}>Adopt Cat</Button>
-                    {/* add route to go home check this later not confirmed to work yet*/}
-                    <Link path='/'>
-                        <Button variant='secondary' onClick={handleGoBack}>Go Back</Button>
-                    </Link>
+                    <Button variant='primary' onClick={()=>history.go(-1)}>Adopt Cat</Button>
+                    <Button variant='secondary' onClick={()=>history.go(-1)}>Go Back</Button>
                 </Card.Body>
                 </Card>
             </Col>

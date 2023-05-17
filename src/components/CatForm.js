@@ -1,6 +1,12 @@
 import React, {useState} from 'react'
+import {useHistory} from 'react-router-dom';
 import {Form, Button} from 'react-bootstrap'
+
+
 function CatForm(props) {
+
+  const history = useHistory()
+
   const [form, setForm] = useState({
     name: "",
     age: "",
@@ -13,7 +19,8 @@ function CatForm(props) {
   const handleChange = ({target: {id, value}}) => setForm({...form, [id]: value})
   const handleSubmit = e => {
     e.preventDefault()
-    props.addNewCat(form)
+   props.addNewCat(form)
+   history.go(-1)
   }
 
   const formArr = []
