@@ -18,6 +18,10 @@ function Home() {
     handleGoBack()
   }
 
+  function handleAdoptCat(id){
+    setCatToAdopt(cats.filter(cat => cat.id === id)[0])
+  }
+
   function toggleProfile() {
     setShowProfile(currentVal => !currentVal)
   }
@@ -60,6 +64,9 @@ function Home() {
     <Switch>
       <Route path="/cats/new">
         <CatForm addNewCat={addNewCat}/>
+      </Route>
+      <Route path="/cats/:id">
+        <CatProfile/>
       </Route>
       <Route exact path="/">
         <CatCollection cats={cats} search={search} sort={sort} toggleProfile={toggleProfile}/>
