@@ -3,11 +3,7 @@ import { Col, Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
-function CatCard({name, age, breed, cost, description, image, id, toggleProfile}) {
-
-function handleProfileClick(event) {
-  toggleProfile()
-}
+function CatCard({name, age, image, id, }) {
 
   return (
     <Col>
