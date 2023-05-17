@@ -18,6 +18,10 @@ function Home() {
     handleGoBack()
   }
 
+  function handleAdoptCat(id){
+    setCatToAdopt(cats.filter(cat => cat.id === id)[0])
+  }
+
   function toggleProfile() {
     setShowProfile(currentVal => !currentVal)
   }

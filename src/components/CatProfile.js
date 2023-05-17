@@ -1,5 +1,5 @@
 import React from 'react'
-import {Link} from 'react-router-dom'
+import {Link, BrowserRouter, Switch, Route} from 'react-router-dom'
 import {Card, Button, Row, Col, Container} from 'react-bootstrap'
 function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id}, handleGoBack, handleEditedCat}) {
     //write handleAdoptClick function for buttons
@@ -29,7 +29,10 @@ function CatProfile({catToAdopt: {image, cost, name, description, age, breed, id
                     <Card.Text>Description: {description}</Card.Text>
                     <Card.Text>Suggested Donation: {cost}</Card.Text>
                     <Button variant='primary' onClick={handleAdoptClick}>Adopt Cat</Button>
-                    <Button variant='secondary' onClick={handleGoBack}>Go Back</Button>
+                    {/* add route to go home check this later not confirmed to work yet*/}
+                    <Link path='/'>
+                        <Button variant='secondary' onClick={handleGoBack}>Go Back</Button>
+                    </Link>
                 </Card.Body>
                 </Card>
             </Col>
