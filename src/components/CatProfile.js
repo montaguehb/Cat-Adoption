@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Link, useParams, useHistory} from 'react-router-dom'
+import {Link, BrowserRouter, Switch, Route, useParams, useHistory} from 'react-router-dom'
 import {Card, Button, Row, Col, Container} from 'react-bootstrap'
 
 
@@ -46,7 +46,7 @@ function CatProfile() {
                     <Card.Text>Description: {description}</Card.Text>
                     <Card.Text>Suggested Donation: {cost}</Card.Text>
                     <Button variant='primary' onClick={()=>history.go(-1)}>Adopt Cat</Button>
-                    <Button variant='secondary' onClick={()=>history.go(-1)}>Go Back</Button>
+                    <Button variant='secondary' onClick={()=>history.go(-1)}>Go Back</Button
                 </Card.Body>
                 </Card>
             </Col>
