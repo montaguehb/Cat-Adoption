@@ -4,7 +4,8 @@ import { Container, Row } from 'react-bootstrap'
 
 function CatCollection({cats, sort, search}) {
   const filteredArray = cats.filter(cat => cat.name.toLowerCase().includes(search.toLowerCase()))
-  const sortedArray = filteredArray.sort((cat1, cat2) => {
+  const adoptedFilterArr = filteredArray.filter(cat => !cat.adopted)
+  const sortedArray = adoptedFilterArr.sort((cat1, cat2) => {
     switch(sort) {
       case "Name ↑":
         return cat1.name > cat2.name ? -1:1
