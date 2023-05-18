@@ -3,36 +3,25 @@ import CatCollection from './CatCollection';
 import CatForm from './CatForm';
 import CatProfile from './CatProfile';
 import Navigation from './Navigation';
+
 import Banner from './Banner';
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 
+
+import ApplicationForm from './ApplicationForm';
+import CatCard from './CatCard';
+
+
 function Home() {
   const [cats, setCats] = useState([])
-  const [catToAdopt, setCatToAdopt] = useState([])
-  const [goBack, setGoBack] = useState(false)
-  const [showProfile, setShowProfile] = useState(false)
   const [search, setSearch] = useState("")
   const [sort, setSort] = useState("Sort By")
 
   function handleEditedCat(newCatObj){
     setCats((currentVal)=>currentVal.map(cat => cat.id === newCatObj.id ? newCatObj : cat))
-    handleGoBack()
   }
 
-  function handleAdoptCat(id){
-    setCatToAdopt(cats.filter(cat => cat.id === id)[0])
-  }
-
-  function toggleProfile() {
-    setShowProfile(currentVal => !currentVal)
-  }
-
-  function handleGoBack(){
-    setGoBack(currentVal => !currentVal)
-    toggleProfile()
-  }
-  
   const handleClick = e => setSort(e.target.textContent)
   const handleSearch = searchText => setSearch(searchText) 
 
@@ -41,11 +30,22 @@ function Home() {
     .then(response => response.json())
     .then(data => {
       setCats(data)
-      setShowProfile(true)
     })
     
   },[])
   
+  function handleAdoptClick(id){
+    fetch(`http://localhost:3001/cats/${id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({adopted: true})
+    })
+    .then(response => response.json())
+    .then(data => handleEditedCat(data))    
+}
+
   const addNewCat = async catObj => {
     const resp = await fetch("http://localhost:3001/cats", {
       method: "POST",
@@ -67,11 +67,14 @@ function Home() {
       <Route path="/cats/new">
         <CatForm addNewCat={addNewCat}/>
       </Route>
+      <Route path="/cats/:id/adoption">
+        <ApplicationForm handleAdoptClick={handleAdoptClick}/>
+      </Route>
       <Route path="/cats/:id">
-        <CatProfile handleEditedCat={handleEditedCat}/>
+        <CatProfile />
       </Route>
       <Route exact path="/">
-        <CatCollection cats={cats} search={search} sort={sort} toggleProfile={toggleProfile}/>
+        <CatCollection cats={cats} search={search} sort={sort}/>
       </Route>
     </Switch>
   </>

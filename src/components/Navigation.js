@@ -8,6 +8,7 @@ const Navigation = (props) => {
   return (
     <Navbar className="nav" sticky='top' style={{backgroundColor:"rgb(125, 189, 248)"}}>
       <Container>
+
         
         <Navbar.Brand as= {Link} to="/" className="badge fs-2 fw-bold  text-wrap text-dark "style={{fontFamily: 'Perpetua', backgroundColor: "rgb(125, 189, 248)"}} >🐈Schrödinger's Cat Adoption</Navbar.Brand>
         <Navbar.Toggle aria-controls='navbarScroll' />
@@ -17,6 +18,7 @@ const Navigation = (props) => {
               <Nav.Link as= {Link} to="/" className="fw-bold">Home</Nav.Link>
               <Nav.Link as= {Link} to="/cats/new" className="fw-bold">Add a Cat</Nav.Link>
            
+
             <NavSort sort={props.sort} handleClick={props.handleClick}/>
           </Nav>
           <NavSearch handleSearch={props.handleSearch}/>

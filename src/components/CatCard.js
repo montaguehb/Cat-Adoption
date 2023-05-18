@@ -3,7 +3,8 @@ import { Col, Button, Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 
-function CatCard({name, age, image, id}) {
+function CatCard({name, age, image, id, }) {
+
   return (
     <Col>
       <Card style={{ width: '18rem' }}>
