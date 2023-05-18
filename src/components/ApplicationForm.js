@@ -5,7 +5,7 @@ import emailJS from "@emailjs/browser"
 import secret from '../secret'
 import CatCard from './CatCard'
 
-function ApplicationForm({updateCat}) {
+function ApplicationForm({handleAdoptClick}) {
   const form = useRef()
   const {id} = useParams()
   const [cat, setCat] = useState({})
@@ -24,7 +24,7 @@ function ApplicationForm({updateCat}) {
         throw new Error(resp.status)
       }
       alert("Purr-fect! Please check your email for the adoption information")
-      updateCat()
+      handleAdoptClick(id)
     }
     catch(error) {
       console.error(error)
