@@ -50,21 +50,21 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 Our project provides various features and functionality including:
 
-- Upon loading, the page will display page navigation and all cats available for adoption
-    - Navigation options ease the user's search. The user can:
+- Upon loading, the page will display page navigation and all cats available for adoption ![Cat Collection](src/images/catGif1.gif)
+    - Navigation options ease the user's search. The user can:![Sort](src/images/catSortBy.PNG)
         - Sort by name
         - Sorty by age
         - Search by name to find a specific cat 
 
-![Getting Started](images/gif1.gif)
-- From all of the available cats, the user has the option to click on each cat to expand their profile and discover more information including:
+
+- From all of the available cats, the user has the option to click on each cat to expand their profile and discover more information including: ![Cat Profile](src/images/catGif2.gif)
     - A detailed description of the cat
     - Button with option to adopt
     - Button to return to the homepage
 
 - If the user chooses to adopt a cat they will fill out a form with their personal information and receive a confirmation of adoption email, and the cat will be removed from the site
 
-- The user can also submit a new cat for adoption by filling out a form with all necessary information, and upon submit will be redirected to the newly uploaded cat's profile
+- The user can also submit a new cat for adoption by filling out a form with all necessary information, and upon submit will be redirected to the newly uploaded cat's profile ![Alt text](src/images/addNewCatForm.PNG)
 
 ## CONTRIBUTE
 Please do not open bug reports, feature requests, or pull requests. If you would like to work on the project forking is more than welcome.
