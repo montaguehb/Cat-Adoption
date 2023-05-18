@@ -22,7 +22,7 @@ function CatCollection({cats, sort, search, handleAdoptCat}) {
   const catsArray = sortedArray.map(catObj => <CatCard key={catObj.id} {...catObj}/>)
 
   return (
-    <Container>
+    <Container >
       <Row md={4}>
         {catsArray}
       </Row>

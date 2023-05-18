@@ -3,7 +3,9 @@ import CatCollection from './CatCollection';
 import CatForm from './CatForm';
 import CatProfile from './CatProfile';
 import Navigation from './Navigation';
-import { BrowserRouter, Switch, Route  } from 'react-router-dom';
+import Banner from './Banner';
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
+import { Container } from 'react-bootstrap';
 
 function Home() {
   const [cats, setCats] = useState([])
@@ -59,7 +61,7 @@ function Home() {
   
   return (
 <>
-
+  <Banner/>
   <Navigation handleClick={handleClick} sort={sort} handleSearch={handleSearch}/>
     <Switch>
       <Route path="/cats/new">
