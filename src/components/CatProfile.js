@@ -18,17 +18,7 @@ function CatProfile({handleEditedCat}) {
     
     }, [id])
     
-    function handleAdoptClick(){
-        fetch(`http://localhost:3001/cats/${id}`, {
-            method: "PATCH",
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({adopted: true})
-        })
-        .then(response => response.json())
-        .then(data => handleEditedCat(data))    
-    }
+   
     if(catProfile === null) return <h1>loading...</h1>
 
     const {name, age, cost, description, image} = catProfile

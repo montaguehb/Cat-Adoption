@@ -28,6 +28,18 @@ function Home() {
     
   },[])
   
+  function handleAdoptClick(id){
+    fetch(`http://localhost:3001/cats/${id}`, {
+        method: "PATCH",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({adopted: true})
+    })
+    .then(response => response.json())
+    .then(data => handleEditedCat(data))    
+}
+
   const addNewCat = async catObj => {
     const resp = await fetch("http://localhost:3001/cats", {
       method: "POST",
@@ -50,10 +62,10 @@ function Home() {
         <CatForm addNewCat={addNewCat}/>
       </Route>
       <Route path="/cats/:id/adoption">
-        <ApplicationForm />
+        <ApplicationForm handleAdoptClick={handleAdoptClick}/>
       </Route>
       <Route path="/cats/:id">
-        <CatProfile handleEditedCat={handleEditedCat}/>
+        <CatProfile />
       </Route>
       <Route exact path="/">
         <CatCollection cats={cats} search={search} sort={sort}/>

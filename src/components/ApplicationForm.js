@@ -1,37 +1,30 @@
-import React, { useState, useEffect } from 'react'
-import {Form} from 'react-bootstrap'
-import { useParams } from 'react-router-dom'
+import React, { useRef, useEffect, useState } from 'react'
+import {Form, Button} from 'react-bootstrap'
+import { useParams, Link } from 'react-router-dom'
 import emailJS from "@emailjs/browser"
 import secret from '../secret'
 import CatCard from './CatCard'
 
-function ApplicationForm() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    cat: {}
-  })
-
+function ApplicationForm({updateCat}) {
+  const form = useRef()
   const {id} = useParams()
-
+  const [cat, setCat] = useState({})
   useEffect(() => {
       fetch(`http://localhost:3001/cats/${id}`)
         .then(response => response.json())
-        .then(cat => setForm({...form, cat}))
-    
+        .then(data => setCat(data))
     }, [id])
 
   const [service_id, template_id] = secret()
-  const handleChange = ({target: {id, value}}) => setForm({...form, [id]: value})
   const sendEmail = async e => {
     e.preventDefault()
     try {
-      const resp = await emailJS.sendForm(service_id, template_id, form)
+      const resp = await emailJS.sendForm(service_id, template_id, form.current,'ebIeoiOeAkxtO7l3p')
       if(resp.status !== 200) {
         throw new Error(resp.status)
       }
       alert("Purr-fect! Please check your email for the adoption information")
+      updateCat()
     }
     catch(error) {
       console.error(error)
@@ -41,21 +34,24 @@ function ApplicationForm() {
   }
   return (
     <>
-      <Form onSubmit={sendEmail} className='mb-3'>
+      <Form onSubmit={sendEmail} className='mb-3' ref={form}>
         <Form.Group controlId='name'>
           <Form.Label>Name: </Form.Label>
-          <Form.Control type='text' placeholder='name' value={form.name} onChange={handleChange}></Form.Control>
+          <Form.Control type='text' placeholder='name' name='name'></Form.Control>
         </Form.Group>
         <Form.Group controlId='email'>
           <Form.Label>Email: </Form.Label>
-          <Form.Control type='text' placeholder='email' value={form.email} onChange={handleChange}></Form.Control>
+          <Form.Control type='email' placeholder='email' name='email'></Form.Control>
         </Form.Group>
         <Form.Group controlId='phone'>
           <Form.Label>Phone: </Form.Label>
-          <Form.Control type='text' placeholder='phone' value={form.phone} onChange={handleChange}></Form.Control>
+          <Form.Control type='text' placeholder='phone' phone='phone'></Form.Control>
         </Form.Group>
+        <Link to={`/`}>
+          <Button variant='primary' onClick={sendEmail}>Adopt Cat</Button>
+        </Link>{' '}
       </Form>
-      <CatCard {...form.cat}/>
+      <CatCard {...cat} />
     </>
   )
 }
