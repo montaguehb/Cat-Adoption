@@ -4,6 +4,8 @@ import CatForm from './CatForm';
 import CatProfile from './CatProfile';
 import Navigation from './Navigation';
 import {Switch, Route} from 'react-router-dom';
+import ApplicationForm from './ApplicationForm';
+import CatCard from './CatCard';
 
 function Home() {
   const [cats, setCats] = useState([])
@@ -46,6 +48,9 @@ function Home() {
     <Switch>
       <Route path="/cats/new">
         <CatForm addNewCat={addNewCat}/>
+      </Route>
+      <Route path="/cats/:id/adoption">
+        <ApplicationForm />
       </Route>
       <Route path="/cats/:id">
         <CatProfile handleEditedCat={handleEditedCat}/>

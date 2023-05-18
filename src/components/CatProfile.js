@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {useParams, useHistory} from 'react-router-dom'
+import {useParams, useHistory, Link} from 'react-router-dom'
 import {Card, Button, Row, Col, Container} from 'react-bootstrap'
 
 
@@ -27,8 +27,7 @@ function CatProfile({handleEditedCat}) {
             body: JSON.stringify({adopted: true})
         })
         .then(response => response.json())
-        .then(data => handleEditedCat(data))
-        history.go(-1)    
+        .then(data => handleEditedCat(data))    
     }
     if(catProfile === null) return <h1>loading...</h1>
 
@@ -46,7 +45,9 @@ function CatProfile({handleEditedCat}) {
                     <Card.Text>Breed: {cost}</Card.Text>
                     <Card.Text>Description: {description}</Card.Text>
                     <Card.Text>Suggested Donation: {cost}</Card.Text>
-                    <Button variant='primary' onClick={handleAdoptClick}>Adopt Cat</Button>
+                    <Link to={`/cats/${id}/adoption`}>
+                        <Button variant='primary'>Adopt Cat</Button>
+                    </Link>{' '}
                     <Button variant='secondary' onClick={()=>history.go(-1)}>Go Back</Button>
                 </Card.Body>
                 </Card>
