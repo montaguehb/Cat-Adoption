@@ -1,8 +1,10 @@
 import React from 'react'
-
+import {Form} from 'react-bootstrap'
 function ApplicationForm() {
   return (
-    <div>ApplicationForm</div>
+    <Form>
+
+    </Form>
   )
 }
 

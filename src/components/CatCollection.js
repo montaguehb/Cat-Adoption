@@ -2,7 +2,7 @@ import React from 'react'
 import CatCard from "./CatCard"
 import { Container, Row } from 'react-bootstrap'
 
-function CatCollection({cats, sort, search, handleAdoptCat}) {
+function CatCollection({cats, sort, search}) {
   const filteredArray = cats.filter(cat => cat.name.toLowerCase().includes(search.toLowerCase()))
   const adoptedFilterArr = filteredArray.filter(cat => !cat.adopted)
   const sortedArray = adoptedFilterArr.sort((cat1, cat2) => {

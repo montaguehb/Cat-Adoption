@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import {Link, BrowserRouter, Switch, Route, useParams, useHistory} from 'react-router-dom'
+import {useParams, useHistory} from 'react-router-dom'
 import {Card, Button, Row, Col, Container} from 'react-bootstrap'
 
 

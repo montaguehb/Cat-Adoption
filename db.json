@@ -28,7 +28,7 @@
       "id": 2,
       "breed": "Snowshoe Cat",
       "age": "10",
-      "adopted": false
+      "adopted": true
     },
     {
       "image": "https://cdn2.thecatapi.com/images/ef1.jpg",
