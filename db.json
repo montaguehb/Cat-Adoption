@@ -18,7 +18,7 @@
       "id": 1,
       "breed": "Maine Coon",
       "age": "1",
-      "adopted": true
+      "adopted": false
     },
     {
       "image": "https://cdn2.thecatapi.com/images/bts.jpg",
@@ -498,16 +498,6 @@
       "id": 49,
       "breed": "British Longhair",
       "age": "4",
-      "adopted": false
-    },
-    {
-      "name": "",
-      "age": "",
-      "breed": "",
-      "cost": "",
-      "description": "",
-      "image": "",
-      "id": 50,
       "adopted": false
     }
   ]

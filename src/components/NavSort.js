@@ -4,7 +4,7 @@ const NavSort = ({sort, handleClick}) => {
     
   return (
     <>
-        <NavDropdown title={sort}>
+        <NavDropdown title={sort} className="fw-bold">
             <NavDropdown.Item onClick={handleClick}>Name ↑</NavDropdown.Item>
             <NavDropdown.Item onClick={handleClick}>Name ↓</NavDropdown.Item>
             <NavDropdown.Item onClick={handleClick}>Age ↑</NavDropdown.Item>
