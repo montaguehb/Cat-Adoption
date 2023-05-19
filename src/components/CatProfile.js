@@ -21,7 +21,7 @@ function CatProfile({handleEditedCat}) {
    
     if(catProfile === null) return <h1>loading...</h1>
 
-    const {name, age, cost, description, image} = catProfile
+    const {name, age, cost, description, image, breed} = catProfile
 
   return (
     <Container>
@@ -32,7 +32,7 @@ function CatProfile({handleEditedCat}) {
                 <Card.Body>
                     <Card.Title>Name: {name}</Card.Title>
                     <Card.Text>Age: {age} years old</Card.Text>
-                    <Card.Text>Breed: {cost}</Card.Text>
+                    <Card.Text>Breed: {breed}</Card.Text>
                     <Card.Text>Description: {description}</Card.Text>
                     <Card.Text>Suggested Donation: {cost}</Card.Text>
                     <Link to={`/cats/${id}/adoption`}>

@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from 'react'
 import {Form, Button} from 'react-bootstrap'
 import { useParams, Link } from 'react-router-dom'
 import emailJS from "@emailjs/browser"
-import secret from '../secret'
 import CatCard from './CatCard'
 
 function ApplicationForm({handleAdoptClick}) {
