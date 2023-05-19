@@ -3,14 +3,9 @@ import CatCollection from './CatCollection';
 import CatForm from './CatForm';
 import CatProfile from './CatProfile';
 import Navigation from './Navigation';
-
 import Banner from './Banner';
-import { BrowserRouter, Switch, Route} from 'react-router-dom';
-import { Container } from 'react-bootstrap';
-
-
+import { Switch, Route} from 'react-router-dom';
 import ApplicationForm from './ApplicationForm';
-import CatCard from './CatCard';
 
 
 function Home() {
