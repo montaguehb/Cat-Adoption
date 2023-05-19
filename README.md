@@ -62,9 +62,9 @@ Our project provides various features and functionality including:
     - Button with option to adopt
     - Button to return to the homepage
 
-- If the user chooses to adopt a cat they will fill out a form with their personal information and receive a confirmation of adoption email, and the cat will be removed from the site
+- If the user chooses to adopt a cat they will fill out a form with their personal information and receive a confirmation of adoption email, and the cat will be removed from the site ![Cat adopt form email](src/images/catAdoptForm.png)
 
-- The user can also submit a new cat for adoption by filling out a form with all necessary information, and upon submit will be redirected to the newly uploaded cat's profile ![Alt text](src/images/addNewCatForm.PNG)
+- The user can also submit a new cat for adoption by filling out a form with all necessary information, and upon submit will be redirected to the newly uploaded cat's profile ![Add new cat form](src/images/addNewCatForm.PNG)
 
 ## CONTRIBUTE
 Please do not open bug reports, feature requests, or pull requests. If you would like to work on the project forking is more than welcome.
