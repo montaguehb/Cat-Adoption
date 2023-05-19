@@ -1,4 +1,4 @@
-# Shrödinger's Cat Adoption
+# 🐈Shrödinger's Cat Adoption
 Welcome to Shrödinger's Cat Adoption!
 We were inspired by all of the animal lovers in the JSON Derulo Cohort, and we decided to create a pet adoption website.
 Scroll through our selection of purrfect cats and find your furever friend!
